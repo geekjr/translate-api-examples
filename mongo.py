@@ -1,9 +1,11 @@
 from pymongo import MongoClient
-mongo_client = MongoClient()
 import requests
+
+mongo_client = MongoClient()
 
 db = mongo_client.some_database
 col = db.some_collection
+
 
 def json_request(doc_to_send):
     url = "https://translation37.p.rapidapi.com/json/"
@@ -18,7 +20,9 @@ def json_request(doc_to_send):
     response = requests.request("POST", url, data=payload, headers=headers)
 
     print(response.text)
+    return response.text
+
 
 for doc in col.find():
     # Translated is the translated document - you can do whatever you want with it :)
-    transleted = json_request(doc)
+    translated = json_request(doc)
