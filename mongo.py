@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 mongo_client = MongoClient()
+import requests
 
 db = mongo_client.some_database
 col = db.some_collection
@@ -19,5 +20,5 @@ def json_request(doc_to_send):
     print(response.text)
 
 for doc in col.find():
-    # Translated is the translated document
+    # Translated is the translated document - you can do whatever you want with it :)
     transleted = json_request(doc)
