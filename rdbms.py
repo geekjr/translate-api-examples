@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # In this example, we will use MySQL. Function is nearly identical for PostGRES.
 
 from translateAPI import translateAPI
