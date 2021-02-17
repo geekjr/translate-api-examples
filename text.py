@@ -1,3 +1,6 @@
+"""
+RUN: python text.py
+"""
 # -*- coding: utf-8 -*-
 from translateAPI import translateAPI
 
