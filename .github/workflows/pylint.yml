@@ -17,6 +17,8 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pylint
+        pip install pymongo mysql-connector-python psycopg2-binary
+        pip install https://test-files.pythonhosted.org/packages/8e/f8/5df5ce9221ac13cfa8c1d25dda47cd3dbbb6e5f9085ed7190e8877a359b6/example_pkg_iamapythongeek-1.0.0-py3-none-any.whl
     - name: Analysing the code with pylint
       run: |
         pylint `ls -R|grep .py$|xargs`
