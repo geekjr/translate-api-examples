@@ -5,7 +5,7 @@ RUN: python mongo.py
 from pymongo import MongoClient
 from translateAPI import translateAPI
 
-mongo_client = MongoClient()
+mongo_client = MongoClient('CONNECTION STRING')
 
 db = mongo_client.some_database
 col = db.some_collection

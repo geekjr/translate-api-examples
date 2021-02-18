@@ -1,0 +1,7 @@
+{
+  "name": "translate-api-examples",
+  "version": "1.0.0",
+  "dependencies": {
+    "translation-api-js-client": "^1.0.0"
+  }
+}
